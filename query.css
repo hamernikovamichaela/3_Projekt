@@ -1,0 +1,50 @@
+@media (max-width: 600px) {
+  /* ================================
+     ÚPRAVA HEADERU NA MOBILU
+     ================================ */
+  header {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ================================
+     MENU NA MOBILU
+     ================================ */
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #15304c;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.active {
+    display: block;
+  }
+
+  /* ================================
+     SEZNAM POLOŽEK MENU
+     ================================ */
+  nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+  /* ================================
+     IKONA HAMBURGER MENU
+     ================================ */
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+  }
+}

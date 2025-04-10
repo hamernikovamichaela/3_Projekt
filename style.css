@@ -1,0 +1,58 @@
+/* ================================
+   GENERAL STYLES / RESET
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER STYLY
+   ================================ */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #15304c;
+  height: 70px;
+}
+.logo {
+  flex-grow: 1;
+}
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+/* ================================
+   NAVIGAČNÍ MENU
+   ================================ */
+nav {
+  display: block;
+  margin-right: 30px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+/* ================================
+   SEKCE WELCOME (HLAVNÍ OBSAH)
+   ================================ */
+.welcome {
+  background: url("img/background.webp") no-repeat center/cover,
+    url("img/harry-potter-20-vyroci.webp") no-repeat center/cover,
+    url("img/harry-potter-hbo-serial-hermiona-ron-bradavice-nahled.webp")
+      no-repeat center/cover;
+  min-height: calc(100vh - 70px);
+  transition: 1s ease-in-out;
+}
